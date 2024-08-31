@@ -1,0 +1,187 @@
+
+ @charset "UTF-8";
+ body {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 300;
+   line-height: 1.42em;
+   color:#A7A1AE;
+   background-color:#1F2739;
+ }
+ h1 {
+   font-size:3em; 
+   font-weight: 300;
+   line-height:1em;
+   text-align: center;
+   color: #4DC3FA;
+ }
+ h2 {
+   font-size:20px; 
+   font-weight: 300;
+   text-align: center;
+   display: block;
+   line-height:1em;
+   padding-bottom: 2em;
+   color: #dedcf0;
+ }
+ h2 a {
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #FB667A;
+   text-decoration: none;
+ }
+ .blue { color: #185875; }
+ .yellow { color: #FFF842; }
+ 
+ .container th h1 {
+     font-weight: bold;
+     font-size: 1em;
+   text-align: left;
+   color: #185875;
+ }
+ .container td {
+     font-weight: normal;
+     font-size: 1em;
+   -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+      -moz-box-shadow: 0 2px 2px -2px #0E1119;
+           box-shadow: 0 2px 2px -2px #0E1119;
+ }
+ .container {
+     text-align: left;
+     overflow: hidden;
+     width: 40%;
+   margin: 0 5%;
+   display: table;
+   padding: 0em 0em 0em 0em;
+ }
+ 
+ .container tr {
+     padding: 0% 0% 0% 0%;
+ 
+ }
+ .container td{
+     padding: 2px 2px  2px 2px;
+ }
+ 
+ /* Background-color of the odd rows */
+ .container tr:nth-child(odd) {
+     background-color: rgb(50, 60, 80);
+ }
+ 
+ /* Background-color of the even rows */
+ .container tr:nth-child(even) {
+     background-color: #2C3446;
+ }
+ 
+ .container th {
+     background-color: #1F2739;
+ }
+ 
+ .container td:first-child { color: #FB667A; }
+ 
+ .container tr:hover {
+    background-color: #464A52;
+    -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+    -moz-box-shadow: 0 6px 6px -6px #0E1119;
+     box-shadow: 0 6px 6px -6px #0E1119;
+ }
+ 
+ .container td:hover {
+   background-color: #b1a962;
+   color: #403E10;
+   font-weight: bold;
+   
+   
+   transition-delay: 0s;
+   transition-duration: 0.4s;
+   transition-property: all;
+   transition-timing-function: line;
+ }
+ 
+ @media (max-width: 800px) {
+ .container td:nth-child(4),
+ .container th:nth-child(4) { display: none; }
+ }
+ 
+ 
+ 
+ .forminput1 {
+   position: relative;
+   font-family: 'Roboto', sans-serif;
+   color: rgb(255, 255, 255);
+   font-size: 19px;
+   margin: 0px 0px 0px 0px;
+   padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+   border-radius: 0.2rem;
+   background-color: rgb(66 83 110);
+   border: none;
+   width: 10px;
+   height: 10px; ;
+   display: block;
+   border-bottom: 0.3rem solid transparent;
+   transition: all 0.3s;
+   float:left;
+ }
+ 
+ .forminput2 {
+   position: relative;
+   font-family: 'Roboto', sans-serif;
+   color: rgb(255, 255, 255);
+   font-size: 19px;
+   margin: 0px 0px 0px 0px;
+   padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+   border-radius: 0.2rem;
+   background-color: rgb(132 149 175);
+   border: none;
+   width: 10px;
+   height: 10px; ;
+   display: block;
+   border-bottom: 0.3rem solid transparent;
+   transition: all 0.3s;
+   float:left;
+ }
+ 
+ 
+ .forminput:placeholder-shown {
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transform: translateY(-4rem);
+   transform: translateY(-4rem);
+ }
+ 
+ div{
+ 
+ float:left;
+ 
+ }
+ 
+ .lesbuttons{
+   position: relative;
+   z-index: 2; /* green box will be above black box */
+   background: rgb(255, 255, 255);
+   width: 320px;
+   left: 150px;
+   top: 115px;
+   height: 270px;
+   opacity: 0.5;
+   border: 5px solid black;
+   opacity: 0.9;
+ }
+ 
+ 
+ 
+ .btn-hoverable {
+       margin: 15px 15px 15px 15px;
+       padding: 15px 30px ;
+       border: 1px solid gray;
+       background-color: #fff;
+       font-size: 20px;
+       transition: 0.3s ease;
+       position: static;
+     }
+     
+   
+     .btn-indigo:hover {
+       background-color: #302ea3;
+       color: white;
+     }
+   

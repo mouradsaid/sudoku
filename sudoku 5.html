@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Niveau 5</title>
+    <link rel="stylesheet" href="sudoku.css">
+    
+    <script src="htmltbl.js"></script>
+</head>
+<body>
+<h1><span class="blue"></span>Sudoku<span class="blue"></span><span class="yellow">Niveau 5</pan></h1>
+<script>document.write(htmlcon)</script>
+
+<script>
+let list = [
+['.', '3', '.', '.', '2', '.', '.', '.', '.'],
+['.', '.', '.', '.', '.', '.', '8', '.', '.'],
+['.', '.', '.', '5', '.', '9', '.', '.', '.'],
+['.', '.', '.', '.', '8', '.', '.', '.', '1'],
+['.', '1', '4', '.', '.', '.', '.', '.', '.'],
+['.', '.', '.', '.', '.', '6', '.', '.', '.'],
+['.', '.', '.', '.', '.', '8', '.', '.', '.'],
+['.', '.', '8', '.', '.', '.', '.', '.', '.'],
+['.', '.', '.', '.', '1', '.', '.', '.', '.']
+];
+
+function brf(){
+  if(newlist1[index]!=f.value){
+  f.style.backgroundColor ="#ff9d9d";
+  f.style.color="black";
+  k++;
+  document.getElementById("knt").innerHTML=k+"/3";
+  }else{f.style.backgroundColor ="#abffcb";
+  f.style.color="black";
+  f.disabled = true;
+  stp++;
+  f=null;
+if(stp==81){
+let c=document.getElementById("crn").innerHTML
+document.getElementById("crn").id="";
+alert("bravo! le temps qu'il faut est " + c );
+  window.location='sudoku 6.html';
+
+}
+}
+  if(k==3){
+  location.reload()
+  }
+  }
+
+
+</script>
+
+
+<script src="sudoku.js"></script>
+</body>
+</html>
